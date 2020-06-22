@@ -1,0 +1,7 @@
+{
+    "type": "esp32-fota-http",
+    "version": 2,
+    "host": "https://bd81cce95b5f9c4d31596cee519572054d3116d1@raw.githubusercontent.com",
+    "port": 80,
+    "bin": "/jmysu/ESP32FOTA/test.bin"
+}
