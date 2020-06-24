@@ -1,6 +1,6 @@
 {
     "type": "esp32-fota-http",
-    "ver": 2.0,
+    "ver": 2.0.1,
     "host": "https://raw.githubusercontent.com",
     "bin": "/jmysu/ESP32FOTA/test.bin"
 }
