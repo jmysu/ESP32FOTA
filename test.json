@@ -1,7 +1,24 @@
 {
-    "name": "testFirmware",
-    "type": "Firmware",
-    "ver": "2.0.0",
-    "host": "https://raw.githubusercontent.com",
-    "bin": "/jmysu/ESP32FOTA/test.bin"
-}
+  "files": [
+    {
+      "name": "test_001",
+      "type": "Firmware",
+      "ver": "2.0.1",
+      "host": "https://raw.githubusercontent.com",
+      "bin": "/jmysu/ESP32FOTA/test001.bin"
+    },
+    {
+      "name": "test_002",
+      "type": "Firmware",
+      "ver": "1.0.2",
+      "host": "https://raw.githubusercontent.com",
+      "bin": "/jmysu/ESP32FOTA/test002.bin"
+    },
+    {
+      "name": "test_003",
+      "type": "Spiffs",
+      "ver": "2.1.0",
+      "host": "https://raw.githubusercontent.com",
+      "bin": "/jmysu/ESP32FOTA/test003.bin"
+    },
+}    
