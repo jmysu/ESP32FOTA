@@ -20,5 +20,6 @@
       "ver": "2.1.0",
       "host": "https://raw.githubusercontent.com",
       "bin": "/jmysu/ESP32FOTA/test003.bin"
-    },
+    }
+   ] 
 }    
