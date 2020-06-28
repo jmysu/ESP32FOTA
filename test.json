@@ -12,7 +12,7 @@
       "type": "Firmware",
       "ver": "1.0.2",
       "host": "https://github.com",
-      "bin": "/jmysu/ESP32FOTA/blob/master/testFirmware.bin
+      "bin": "/jmysu/ESP32FOTA/blob/master/testFirmware.bin"
     },
     {
       "name": "test_003",
