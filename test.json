@@ -11,8 +11,8 @@
       "name": "test_002",
       "type": "Firmware",
       "ver": "1.0.2",
-      "host": "https://github.com",
-      "bin": "/jmysu/ESP32FOTA/blob/master/testFirmware.bin"
+      "host": "https://raw.githubusercontent.com",
+      "bin": "/jmysu/ESP32FOTA/testFirmware.bin"
     },
     {
       "name": "test_003",
