@@ -1,0 +1,51 @@
+#include <ArduinoJson.h>
+#include <HTTPClient.h>
+#include <WiFi.h>
+
+const char* ssid = CONFIG_WIFI_SSID;
+const char* password = CONFIG_WIFI_PASSWORD;
+
+const String sJsonPath = "https://raw.githubusercontent.com/jmysu/ESP32FOTA/master/test.json";
+const String sHost = "https://raw.githubusercontent.com";
+
+//extern esp_err_t https_ota(String sHost, String sPath);
+//extern void httpsUpdate(String sHost, String sPath);
+extern bool PerformOTA(String& binURL);
+extern int httpsCheckJson(String sMyTarget, String sMyVer, String sJsonPath, char* cHost, char* cBinPath);
+const String sMyVer = "1.0.1";
+const String sMyName= "test_002";
+///////////////////////////////////////////////////////////////////////////////
+void setup() {
+    Serial.begin(115200);
+    delay(100);
+
+    WiFi.begin(ssid, password);
+
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(1000);
+        Serial.println("Connecting to WiFi..");
+    }
+
+    Serial.println("Connected to the WiFi network");
+}
+
+char cHost[128], cBinPath[128];
+void loop() {
+    if ((WiFi.status() == WL_CONNECTED)) {  //Check the current connection status
+      
+      httpsCheckJson(sMyName, sMyVer, sJsonPath, cHost, cBinPath);
+      if (cBinPath != nullptr) {
+        Serial.printf("\nFound host/bin:%s %s", cHost, cBinPath);
+        Serial.printf("\nStarting update...");
+        String sHost = cHost;
+        String sBinPath = cBinPath;
+        //httpsUpdate(sHost, sBinPath);
+        //https_ota(sHost, sBinPath);
+        PerformOTA(sHost+sBinPath);
+        }
+      }
+
+    while (1) {
+      delay(1);
+      }
+}
