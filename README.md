@@ -2,8 +2,8 @@
 ESP32 SSL httpUpdate w/ https://raw.githubusercontent.com/
 <br><br>
 
-A simple httpUpdate with binary on https://raw.githubusercontent.com
-<img src="picture/SSLhttpUpdate0701.png" width=320/> &nbsp;&nbsp;&nbsp; />
+A simple httpUpdate with binary on https://raw.githubusercontent.com <br>
+<img src="picture/SSLhttpUpdate0701.png" width=480/> &nbsp;&nbsp;&nbsp; 
 <br><br>
 
 
