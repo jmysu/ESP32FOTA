@@ -13,7 +13,7 @@ Use this link to get correct root SSL certification:
 <br><br>
 
 ## References
-  - [Arduino httpUpdate Library](https://github.com/espressif/arduino-esp32/tree/master/libraries/Update) Arduino ESP32 httpUpdate code at Github.
-  - [SSL root CA](https://projects.petrucci.ch/esp32/?page=ssl) Get SSL root certification for ESP32.
+  - [Arduino httpUpdate Library](https://github.com/espressif/arduino-esp32/tree/master/libraries/Update) Arduino ESP32 httpUpdate library at Github.
+  - [SSL root CA converter](https://projects.petrucci.ch/esp32/?page=ssl) Get SSL root certification converted for ESP32.
 
 
