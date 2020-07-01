@@ -8,6 +8,8 @@ A simple httpUpdate with binary on https://raw.githubusercontent.com <br>
 
 Use this link to get correct root SSL certification:
       https://projects.petrucci.ch/esp32/?page=ssl
+<br>
+<img src="picture/rootCA.png" width=480/>
 <br><br>
 
 ## References
