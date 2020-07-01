@@ -1,8 +1,8 @@
 # ESP32FOTA  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)<br>
-ESP32 SSL httpUpdate w/ https://raw.githubusercontent.com/
+ESP32 SSL httpUpdate at https://raw.githubusercontent.com/
 <br><br>
 
-A simple httpUpdate with binary on https://raw.githubusercontent.com <br>
+A simple httpUpdate for binary on https://raw.githubusercontent.com <br>
 <img src="picture/SSLhttpUpdate0701.png" width=640/> &nbsp;&nbsp;&nbsp; 
 <br><br>
 
