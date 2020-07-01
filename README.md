@@ -4,7 +4,7 @@ An simple Arduino project for updating ESP32 firmware where kept at GitHub.
 
 <br><br>
 
-A simple httpUpdate for binary on https://raw.githubusercontent.com <br>
+A successful updating message log for binary at https://raw.githubusercontent.com <br>
 <img src="picture/SSLhttpUpdate0701.png" width=640/> &nbsp;&nbsp;&nbsp; 
 <br><br>
 
