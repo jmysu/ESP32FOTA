@@ -8,7 +8,7 @@
       https://projects.petrucci.ch/esp32/?page=ssl
 
 */
-
+#include <Update.h>
 #include <HTTPClient.h>
 #include <HTTPUpdate.h>
 #include <WiFi.h>
@@ -76,6 +76,19 @@ const char* rootCACertificateRAWGitHub =
     "-----END CERTIFICATE-----\n"
     "";
 
+int progressPercent = 0;
+int last = 0;
+void OnOtaProgress(int progress, int totalt) {
+	progressPercent = (100 * progress) / totalt;
+	if (last != progressPercent && progressPercent % 10 == 0) {
+		//print every 10%
+        Serial.print("\r[OTA:");
+		Serial.print(progressPercent);
+		Serial.print("%] ");
+	}
+	last = progressPercent;
+}
+
 void setup() {
     Serial.begin(115200);
     Serial.println();
@@ -96,6 +109,8 @@ void loop() {
         // Reading data over SSL may be slow, use an adequate timeout
         client.setTimeout(60000 / 1000);  // timeout argument is defined in seconds for setTimeout, Should be under 30" for 1024K binary
 
+        // Add Progress%
+        Update.onProgress(OnOtaProgress);
         // The line below is optional. It can be used to blink the LED on the board during flashing.  The LED will be on during download of one buffer of data from the network. The LED will
         // be off during writing that buffer to flash on a good connection the LED should flash regularly. On a bad connection the LED will be  on much longer than it will be off. Other pins than LED_BUILTIN may be used. The second
         // value is used to put the LED on. If the LED is on with HIGH, that value should be passed
