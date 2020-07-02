@@ -5,7 +5,7 @@ An Arduino project for updating ESP32 firmware where kept at GitHub.
 <br><br>
 
 A successful updating message log for binary at https://raw.githubusercontent.com <br>
-<img src="picture/SSLhttpUpdate0701.png" width=640/> &nbsp;&nbsp;&nbsp; 
+<img src="picture/SSLhttpUpdate0702.png" width=640/> &nbsp;&nbsp;&nbsp; 
 <br><br>
 
 Use this link to get correct root SSL certification:
