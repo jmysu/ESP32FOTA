@@ -1,7 +1,7 @@
 # ESP32FOTA  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)<br>
-ESP32 SSL httpUpdate at https://raw.githubusercontent.com/ <br><br>
-An Arduino project for updating ESP32 firmware where kept at GitHub.
+ESP32 SSL httpUpdate with files in https://raw.githubusercontent.com/ <br><br>
 
+An Arduino project for updating ESP32 firmware where kept at GitHub, using official ESP32 httpUpdate w/ SSL.
 <img src="picture/SslOtaGithub.png" width=320/>
 <br><br>
 
