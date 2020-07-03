@@ -78,13 +78,15 @@ const char* rootCACertificateRAWGitHub =
 
 int progressPercent = 0;
 int last = 0;
+long lastMillis;
 void OnOtaProgress(int progress, int totalt) {
 	progressPercent = (100 * progress) / totalt;
 	if (last != progressPercent && progressPercent % 10 == 0) {
 		//print every 10%
         Serial.print("\r[OTA:");
 		Serial.print(progressPercent);
-		Serial.print("%] ");
+		Serial.print("%]");
+        Serial.printf("@%ldsecs ", (millis()-lastMillis)/1000);
 	}
 	last = progressPercent;
 }
@@ -118,6 +120,7 @@ void loop() {
         httpUpdate.setLedPin(2, HIGH);
         httpUpdate.rebootOnUpdate(false);  //Don't reboot after update completed!
         printLocalTime();
+        lastMillis = millis();
         t_httpUpdate_return ret = httpUpdate.update(client, "https://raw.githubusercontent.com/jmysu/ESP32FOTA/master/firmware.bin");
         switch (ret) {
             case HTTP_UPDATE_FAILED:
