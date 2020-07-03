@@ -2,6 +2,7 @@
 ESP32 SSL httpUpdate at https://raw.githubusercontent.com/ <br><br>
 An Arduino project for updating ESP32 firmware where kept at GitHub.
 
+<img src="picture/SslOtaGithub.png"/>
 <br><br>
 
 A successful updating message log for binary at https://raw.githubusercontent.com <br>
